@@ -1,6 +1,6 @@
 {
-    "name": "marp_mobile",
-    "short_name": "marp_mobile",
+    "name": "marp_m",
+    "short_name": "marp_m",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

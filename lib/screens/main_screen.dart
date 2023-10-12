@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgets/tmap_widget.dart';
+import 'package:marp_m/containers/MainScreen/bottom.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -11,17 +11,51 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
-    double screenwidthFixed = MediaQuery.of(context).size.width / 1080;
-    double screenheightFixed = MediaQuery.of(context).size.height / 2340;
-    return MaterialApp(
-      home: Stack(
-        children: [
-          Column(),
-          Column(
-            children: [TmapMain()],
+    double screenwidthFixed = MediaQuery.of(context).size.width / 393;
+    double screenheightFixed = MediaQuery.of(context).size.height / 852;
+    return Stack(
+      children: [
+        Column(
+          children: [
+            SizedBox(
+              height: screenheightFixed * 642,
+            ),
+            Container(
+              width: screenwidthFixed * 393,
+              height: screenheightFixed * 210,
+              decoration: const BoxDecoration(
+                color: Colors.white,
+              ),
+            )
+          ],
+        ),
+        SizedBox(
+          width: screenwidthFixed * 393,
+          height: screenheightFixed * 852,
+          child: const Image(
+            image: AssetImage(
+              'assets/images/main_map.png',
+            ),
+            fit: BoxFit.fill,
           ),
-        ],
-      ),
+        ),
+        Column(
+          children: [
+            SizedBox(
+              height: screenheightFixed * 612,
+            ),
+            Container(
+              width: screenwidthFixed * 393,
+              height: screenheightFixed * 240,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+                color: Colors.white,
+              ),
+              child: const BottomContainer(),
+            )
+          ],
+        ),
+      ],
     );
   }
 }

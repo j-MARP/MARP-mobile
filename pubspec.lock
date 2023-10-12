@@ -83,14 +83,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.6.6"
-  json_annotation:
-    dependency: transitive
-    description:
-      name: json_annotation
-      sha256: b10a7b2ff83d83c777edba3c6a0f97045ddadd56c944e1a23a3fdf43a1bf4467
-      url: "https://pub.dev"
-    source: hosted
-    version: "4.8.1"
   lints:
     dependency: transitive
     description:
@@ -131,14 +123,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.8.3"
-  plugin_platform_interface:
-    dependency: transitive
-    description:
-      name: plugin_platform_interface
-      sha256: da3fdfeccc4d4ff2da8f8c556704c08f912542c5fb3cf2233ed75372384a034d
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.1.6"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -192,15 +176,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.6.0"
-  tmap_ui_sdk:
-    dependency: "direct main"
-    description:
-      path: "."
-      ref: "1.0.14"
-      resolved-ref: b574e427474b20cde2a2054c25fe10a9ed597f07
-      url: "https://github.com/TmapSDK/TmapUI_FlutterSDK.git"
-    source: git
-    version: "1.0.14"
   vector_math:
     dependency: transitive
     description:
@@ -218,5 +193,5 @@ packages:
     source: hosted
     version: "0.1.4-beta"
 sdks:
-  dart: ">=3.1.0-185.0.dev <4.0.0"
+  dart: ">=3.1.2 <4.0.0"
   flutter: ">=3.13.0"

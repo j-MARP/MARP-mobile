@@ -18,6 +18,11 @@ class _BottomContainerState extends State<BottomContainer> {
           height: screenheightFixed * 8,
           width: screenwidthFixed * 1,
         ),
+        Container(
+          width: screenwidthFixed * 54,
+          height: screenheightFixed * 4,
+          color: const Color(0xffd9d9d9),
+        ),
         SizedBox(
           height: screenheightFixed * 28,
           width: screenwidthFixed * 1,

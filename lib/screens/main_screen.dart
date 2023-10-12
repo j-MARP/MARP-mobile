@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../containers/circomp.dart';
 import '../containers/MainScreen/bottom.dart';
 
 class MainScreen extends StatefulWidget {
@@ -15,20 +16,6 @@ class _MainScreenState extends State<MainScreen> {
     double screenheightFixed = MediaQuery.of(context).size.height / 852;
     return Stack(
       children: [
-        Column(
-          children: [
-            SizedBox(
-              height: screenheightFixed * 642,
-            ),
-            Container(
-              width: screenwidthFixed * 393,
-              height: screenheightFixed * 210,
-              decoration: const BoxDecoration(
-                color: Colors.white,
-              ),
-            )
-          ],
-        ),
         SizedBox(
           width: screenwidthFixed * 393,
           height: screenheightFixed * 852,
@@ -38,6 +25,19 @@ class _MainScreenState extends State<MainScreen> {
             ),
             fit: BoxFit.fill,
           ),
+        ),
+        Column(
+          children: [
+            SizedBox(
+              height: screenheightFixed * 642,
+              width: screenwidthFixed * 1,
+            ),
+            Container(
+              width: screenwidthFixed * 393,
+              height: screenheightFixed * 210,
+              color: const Color.fromARGB(255, 255, 255, 255),
+            )
+          ],
         ),
         Column(
           children: [
@@ -55,6 +55,7 @@ class _MainScreenState extends State<MainScreen> {
             )
           ],
         ),
+        const CirComp()
       ],
     );
   }

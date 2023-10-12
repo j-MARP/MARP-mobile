@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:marp_m/containers/circomp.dart';
+import '../containers/circomp.dart';
 import '../containers/MainScreen/bottom.dart';
 
 class MainScreen extends StatefulWidget {
@@ -35,7 +35,7 @@ class _MainScreenState extends State<MainScreen> {
             Container(
               width: screenwidthFixed * 393,
               height: screenheightFixed * 210,
-              color: Color.fromARGB(255, 255, 255, 255),
+              color: const Color.fromARGB(255, 255, 255, 255),
             )
           ],
         ),

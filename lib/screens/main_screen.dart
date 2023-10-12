@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:marp_m/containers/MainScreen/bottom.dart';
+import '../containers/MainScreen/bottom.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});

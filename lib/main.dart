@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
-import 'package:marp_m/screens/main_screen.dart';
+import 'screens/main_screen.dart';
 
 void main() {
   runApp(const MyApp());

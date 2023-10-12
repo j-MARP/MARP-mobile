@@ -37,8 +37,16 @@ class _SplashScreenState extends State<SplashScreen> {
           ),
         ),
         child: Center(
-          child: Image.asset('assets/images/logo_center.png'),
-        ),
+            child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset('assets/images/logo_center.png'),
+            Text(
+              'MARP',
+              style: TextStyle(color: Colors.white),
+            )
+          ],
+        )),
       ),
     );
   }

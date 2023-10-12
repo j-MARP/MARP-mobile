@@ -1,4 +1,4 @@
-package com.example.marp_m
+package com.example.marp_mobile
 
 import io.flutter.embedding.android.FlutterActivity
 

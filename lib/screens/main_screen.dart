@@ -21,7 +21,7 @@ class _MainScreenState extends State<MainScreen> {
           height: screenheightFixed * 852,
           child: const Image(
             image: AssetImage(
-              'assets/images/main_map.png',
+              'assets/images/Map.png',
             ),
             fit: BoxFit.fill,
           ),

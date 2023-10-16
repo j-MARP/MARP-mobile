@@ -15,7 +15,6 @@ class _SelecBottomState extends State<SelecBottom> {
     return Column(
       children: [
         SizedBox(
-          width: screenwidthFixed * 1,
           height: screenheightFixed * 8,
         ),
         Container(
@@ -25,22 +24,18 @@ class _SelecBottomState extends State<SelecBottom> {
         ),
         SizedBox(
           height: screenheightFixed * 27,
-          width: screenwidthFixed * 1,
         ),
-        SizedBox(
+        Container(
           width: screenwidthFixed * 393,
-          height: screenheightFixed * 109,
+          padding: EdgeInsets.symmetric(
+            horizontal: screenwidthFixed * 25,
+          ),
           child: SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
               children: [
-                SizedBox(
-                  width: screenwidthFixed * 25,
-                  height: screenheightFixed * 1,
-                ),
                 Container(
                   width: screenwidthFixed * 194,
-                  height: screenheightFixed * 107,
                   decoration: BoxDecoration(
                     color: Colors.white,
                     border: Border.all(
@@ -53,13 +48,11 @@ class _SelecBottomState extends State<SelecBottom> {
                     children: [
                       SizedBox(
                         height: screenheightFixed * 12,
-                        width: screenwidthFixed * 1,
                       ),
                       Row(
                         children: [
                           SizedBox(
                             width: screenwidthFixed * 13,
-                            height: screenheightFixed * 1,
                           ),
                           const Text(
                             '1분',
@@ -67,12 +60,13 @@ class _SelecBottomState extends State<SelecBottom> {
                           ),
                           SizedBox(
                             width: screenwidthFixed * 60,
-                            height: screenheightFixed * 1,
                           ),
                           const Text(
                             'MARP 추천',
                             style: TextStyle(
-                                color: Color(0xff5e94ff), fontSize: 15),
+                              color: Color(0xff5e94ff),
+                              fontSize: 15,
+                            ),
                           )
                         ],
                       ),
@@ -80,11 +74,13 @@ class _SelecBottomState extends State<SelecBottom> {
                         children: [
                           SizedBox(
                             width: screenwidthFixed * 13,
-                            height: screenheightFixed * 1,
                           ),
                           const Text(
                             '한국디지털미디어고등학교',
-                            style: TextStyle(color: Colors.black, fontSize: 12),
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 12,
+                            ),
                           ),
                         ],
                       ),
@@ -92,11 +88,13 @@ class _SelecBottomState extends State<SelecBottom> {
                         children: [
                           SizedBox(
                             width: screenwidthFixed * 13,
-                            height: screenheightFixed * 1,
                           ),
                           const Text(
                             '오전 9:17 도착',
-                            style: TextStyle(color: Colors.black, fontSize: 12),
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 12,
+                            ),
                           ),
                         ],
                       ),
@@ -104,24 +102,27 @@ class _SelecBottomState extends State<SelecBottom> {
                         children: [
                           SizedBox(
                             width: screenwidthFixed * 13,
-                            height: screenheightFixed * 1,
                           ),
                           const Text(
                             '0.3KM   0원',
-                            style: TextStyle(color: Colors.black, fontSize: 12),
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 12,
+                            ),
                           ),
                         ],
+                      ),
+                      SizedBox(
+                        height: screenheightFixed * 12,
                       ),
                     ],
                   ),
                 ),
                 SizedBox(
                   width: screenwidthFixed * 14,
-                  height: screenheightFixed * 1,
                 ),
                 Container(
                   width: screenwidthFixed * 194,
-                  height: screenheightFixed * 107,
                   decoration: BoxDecoration(
                     color: Colors.white,
                     border: Border.all(
@@ -134,17 +135,18 @@ class _SelecBottomState extends State<SelecBottom> {
                     children: [
                       SizedBox(
                         height: screenheightFixed * 12,
-                        width: screenwidthFixed * 1,
                       ),
                       Row(
                         children: [
                           SizedBox(
                             width: screenwidthFixed * 13,
-                            height: screenheightFixed * 1,
                           ),
                           const Text(
                             '2분',
-                            style: TextStyle(color: Colors.black, fontSize: 20),
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 20,
+                            ),
                           ),
                         ],
                       ),
@@ -152,11 +154,13 @@ class _SelecBottomState extends State<SelecBottom> {
                         children: [
                           SizedBox(
                             width: screenwidthFixed * 13,
-                            height: screenheightFixed * 1,
                           ),
                           const Text(
                             '한국디지털미디어고등학교',
-                            style: TextStyle(color: Colors.black, fontSize: 12),
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 12,
+                            ),
                           ),
                         ],
                       ),
@@ -164,11 +168,13 @@ class _SelecBottomState extends State<SelecBottom> {
                         children: [
                           SizedBox(
                             width: screenwidthFixed * 13,
-                            height: screenheightFixed * 1,
                           ),
                           const Text(
                             '오전 9:18 도착',
-                            style: TextStyle(color: Colors.black, fontSize: 12),
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 12,
+                            ),
                           ),
                         ],
                       ),
@@ -176,28 +182,28 @@ class _SelecBottomState extends State<SelecBottom> {
                         children: [
                           SizedBox(
                             width: screenwidthFixed * 13,
-                            height: screenheightFixed * 1,
                           ),
                           const Text(
                             '0.4KM   0원',
-                            style: TextStyle(color: Colors.black, fontSize: 12),
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 12,
+                            ),
                           ),
                         ],
+                      ),
+                      SizedBox(
+                        height: screenheightFixed * 12,
                       ),
                     ],
                   ),
                 ),
-                SizedBox(
-                  width: screenwidthFixed * 14,
-                  height: screenheightFixed * 1,
-                )
               ],
             ),
           ),
         ),
         SizedBox(
           height: screenheightFixed * 9,
-          width: screenwidthFixed * 1,
         ),
         SizedBox(
           width: screenwidthFixed * 393,
@@ -206,11 +212,10 @@ class _SelecBottomState extends State<SelecBottom> {
             children: [
               SizedBox(
                 width: screenwidthFixed * 27,
-                height: screenheightFixed * 1,
               ),
               Container(
                 width: screenwidthFixed * 45,
-                height: screenheightFixed * 45,
+                height: screenwidthFixed * 45,
                 decoration: BoxDecoration(
                   color: const Color(0xffC9C9C9),
                   borderRadius: BorderRadius.circular(10),
@@ -222,7 +227,6 @@ class _SelecBottomState extends State<SelecBottom> {
               ),
               SizedBox(
                 width: screenwidthFixed * 13,
-                height: screenheightFixed * 1,
               ),
               Container(
                 width: screenwidthFixed * 288,
@@ -246,7 +250,10 @@ class _SelecBottomState extends State<SelecBottom> {
               ),
             ],
           ),
-        )
+        ),
+        SizedBox(
+          height: screenheightFixed * 15,
+        ),
       ],
     );
   }

@@ -26,21 +26,21 @@ packages:
     source: hosted
     version: "0.10.5+5"
   camera_android:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       name: camera_android
-      sha256: c978373b41a463c9edda3fea0a06966299f55db63232cd0f0d4efc21a59a0006
+      sha256: af66800975e965fb3addf2849d4cda46df757b51e3c0897971f5b781dad33305
       url: "https://pub.dev"
     source: hosted
-    version: "0.10.8+12"
+    version: "0.9.7+1"
   camera_avfoundation:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       name: camera_avfoundation
-      sha256: "9495e633cda700717bbe299b0979e6c4a08cee45f298945973dc9cf3e4c1cba5"
+      sha256: "104900ddb43f7e546806eddd6ab448d04e08b0114baa5b9cf4127b833f10f01f"
       url: "https://pub.dev"
     source: hosted
-    version: "0.9.13+6"
+    version: "0.9.7+1"
   camera_platform_interface:
     dependency: transitive
     description:

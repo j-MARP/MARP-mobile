@@ -108,12 +108,15 @@ class _MainSearchState extends State<MainSearch> {
                     if (onSearch)
                       Row(
                         children: [
-                          Container(
+                          SizedBox(
                             width: screenwidthFixed * 70,
                             height: screenwidthFixed * 70,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(15),
-                              color: Colors.amber,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(25.0),
+                              child: const Image(
+                                image: AssetImage('assets/images/dimigo.png'),
+                                fit: BoxFit.fill,
+                              ),
                             ),
                           ),
                           SizedBox(width: screenwidthFixed * 4),

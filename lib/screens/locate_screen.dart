@@ -55,12 +55,16 @@ class _LocateScreenState extends State<LocateScreen> {
                 child: Column(
                   children: [
                     SizedBox(height: screenheightFixed * 31),
-                    Container(
+                    SizedBox(
                       width: screenwidthFixed * 144,
-                      height: screenheightFixed * 144,
-                      decoration: BoxDecoration(
-                          color: Colors.amber,
-                          borderRadius: BorderRadius.circular(30)),
+                      height: screenwidthFixed * 144,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(40.0),
+                        child: const Image(
+                          image: AssetImage('assets/images/dimigo.png'),
+                          fit: BoxFit.fill,
+                        ),
+                      ),
                     ),
                     SizedBox(height: screenheightFixed * 9),
                     const Text(

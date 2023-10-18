@@ -60,14 +60,8 @@ class _BottomContainerState extends State<BottomContainer> {
                     '한국디지털미디어고등학교',
                     style: TextStyle(color: Colors.black, fontSize: 12),
                   ),
-                SizedBox(
-                  width: screenwidthFixed * 175,
-                ),
-                SizedBox(
-                  width: screenwidthFixed * 22,
-                  height: screenheightFixed * 22,
-                  child: const Icon(Icons.search),
-                )
+                Expanded(child: SizedBox()),
+                const Icon(Icons.search)
               ],
             ),
           ),
@@ -94,28 +88,19 @@ class _BottomContainerState extends State<BottomContainer> {
                   height: screenheightFixed * 1,
                 ),
                 SizedBox(
-                  width: screenwidthFixed * 96,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(
                         height: screenheightFixed * 20,
                       ),
-                      SizedBox(
-                        width: screenwidthFixed * 96,
-                        height: screenheightFixed * 25,
-                        child: const Text(
-                          'AR 사용하기',
-                          style: TextStyle(color: Colors.white, fontSize: 18),
-                        ),
+                      const Text(
+                        'AR 사용하기',
+                        style: TextStyle(color: Colors.white, fontSize: 18),
                       ),
-                      SizedBox(
-                        width: screenwidthFixed * 96,
-                        height: screenheightFixed * 19,
-                        child: const Text(
-                          '현재 위치에서 AR 사용하기',
-                          style: TextStyle(color: Colors.white, fontSize: 8),
-                        ),
+                      const Text(
+                        '현재 위치에서 AR 사용하기',
+                        style: TextStyle(color: Colors.white, fontSize: 8),
                       )
                     ],
                   ),

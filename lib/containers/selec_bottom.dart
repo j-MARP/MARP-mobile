@@ -61,8 +61,8 @@ class _SelecBottomState extends State<SelecBottom> {
                             '1분',
                             style: TextStyle(color: Colors.black, fontSize: 20),
                           ),
-                          SizedBox(
-                            width: screenwidthFixed * 60,
+                          Expanded(
+                            child: SizedBox(),
                           ),
                           const Text(
                             'MARP 추천',

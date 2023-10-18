@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../containers/circomp.dart';
-import '../containers/MainScreen/bottom.dart';
+import '../containers/main_bottom.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -52,7 +52,7 @@ class _MainScreenState extends State<MainScreen> {
                 color: Colors.white,
               ),
               child: const BottomContainer(),
-            )
+            ),
           ],
         ),
         const CirComp()

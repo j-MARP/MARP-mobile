@@ -1,4 +1,7 @@
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:marp_mobile/screens/navi_screen.dart';
 
 class SelecBottom extends StatefulWidget {
   const SelecBottom({super.key});
@@ -228,24 +231,30 @@ class _SelecBottomState extends State<SelecBottom> {
               SizedBox(
                 width: screenwidthFixed * 13,
               ),
-              Container(
-                width: screenwidthFixed * 288,
-                height: screenheightFixed * 45,
-                decoration: BoxDecoration(
-                  color: const Color(0xff5E94FF),
-                  borderRadius: BorderRadius.circular(15),
-                ),
-                child: const Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      '안내 시작',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
+              GestureDetector(
+                onTap: () async {
+                  var cameras = await availableCameras();
+                  Get.to(() => NaviScreen(cameras.first));
+                },
+                child: Container(
+                  width: screenwidthFixed * 288,
+                  height: screenheightFixed * 45,
+                  decoration: BoxDecoration(
+                    color: const Color(0xff5E94FF),
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        '안내 시작',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ],

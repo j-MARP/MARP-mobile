@@ -100,7 +100,9 @@ class _LocateScreenState extends State<LocateScreen> {
                         ),
                       ],
                     ),
-                    SizedBox(height: screenheightFixed * 22)
+                    SizedBox(height: screenheightFixed * 22),
+                    const Image(
+                        image: AssetImage('assets/images/comments.png')),
                   ],
                 ),
               ),
